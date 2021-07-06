@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "V5FCXHzaa4Io4gwruJE+SGm5bBiWyqdeuasse4OFR6ZH4biwZmnMrd9Kr7wZawLKm6CEi57PBWIxjA3lazINqA==",
+  "success": true,
+  "projectFilePath": "F:\\Old install\\Documents\\Github\\AnnotateDataUpdate\\AnnotateDataUpdate\\AnnotateDataUpdate.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
