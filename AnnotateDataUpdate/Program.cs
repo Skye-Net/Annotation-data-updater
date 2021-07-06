@@ -23,7 +23,7 @@ namespace AnnotateDataUpdate
         /// </summary>
         /// <param name="input">The consolekey</param>
         /// <param name="path">The path with data</param>
-        private static void PerformDataUpdate(ConsoleKey input, string? path)
+        private static void PerformDataUpdate(ConsoleKey input, string path)
         {
             while (input != ConsoleKey.D0 && input != ConsoleKey.NumPad0)
             {
@@ -85,7 +85,7 @@ namespace AnnotateDataUpdate
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        private static string? GetPathAndAction(out ConsoleKey input)
+        private static string GetPathAndAction(out ConsoleKey input)
         {
             Console.WriteLine("Input filepath");
             var path = Console.ReadLine();
