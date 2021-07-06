@@ -114,7 +114,7 @@ namespace AnnotateDataUpdate
             }
         }
 
-        private static void ConvertAllImagesToPng(string? path)
+        private static void ConvertAllImagesToPng(string path)
         {
             var extensions = new[] {"jpg", "bmp"};
             var files = Extensions.FilterFiles(path, extensions).ToList();
@@ -167,7 +167,7 @@ namespace AnnotateDataUpdate
 
         }
 
-        private static void RemoveTextFilesWithNoImages(string? path)
+        private static void RemoveTextFilesWithNoImages(string path)
         {
             var extensions = new[] {"txt"};
             var files = Extensions.FilterFiles(path, extensions);
