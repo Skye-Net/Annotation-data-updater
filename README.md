@@ -1,5 +1,5 @@
 # Annotation data updater
-![](https://github.com/Skye-Net/Annotation-data-updater/tree/main/Images/YoloExample.gif "Yolo annotation examples")
+![](https://github.com/Skye-Net/Annotation-data-updater/blob/main/Images/YoloExample.gif "Yolo annotation examples")
 
 Annotation data updater is a console/commandline tool made to interact and modify/update an existing YOLO dataset in a fast and easy way.
 
@@ -17,7 +17,7 @@ Annotation data updater is a console/commandline tool made to interact and modif
 8. Convert all images to png
 
 ## Data updating using the interface
-![](https://github.com/Skye-Net/Annotation-data-updater/tree/main/Images/UI_Example.png "The user interface")  
+![](https://github.com/Skye-Net/Annotation-data-updater/blob/main/Images/UI_Example.png "The user interface")  
 Simply run the program and follow the instructions in the console.
 
 ## Data updating from the commandline
