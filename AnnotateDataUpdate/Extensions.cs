@@ -8,7 +8,7 @@ namespace AnnotateDataUpdate
     {
         public static string ReplaceAtIndex(int i, char value, string word)
         {
-            char[] letters = word.ToCharArray();
+            var letters = word.ToCharArray();
             letters[i] = value;
             return string.Join("", letters);
         }
