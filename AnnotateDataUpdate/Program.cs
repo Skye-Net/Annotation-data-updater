@@ -67,6 +67,10 @@ namespace AnnotateDataUpdate
                     case ConsoleKey.NumPad8:
                         ConvertAllImagesToPng(path);
                         break;
+                    case ConsoleKey.D9:
+                    case ConsoleKey.NumPad9:
+                        ConvertToInvalidData(path);
+                        break;
                     default:
                         Console.WriteLine("Invalid input");
                         Environment.Exit(0);
@@ -78,6 +82,20 @@ namespace AnnotateDataUpdate
                 Console.WriteLine("What do want to do?");
                 input = Console.ReadKey().Key;
             }
+        }
+
+        private static void ConvertToInvalidData(string path)
+        {
+            var extensions = new[] {"jpg", "bmp", "png"};
+            var files = Extensions.FilterFiles(path, extensions).ToList();
+            Parallel.ForEach(files, file =>
+            {
+                var destFile = Path.ChangeExtension(file, "txt");
+                if (!File.Exists(destFile))
+                {
+                    File.WriteAllText(destFile, string.Empty);
+                }
+            });
         }
 
         /// <summary>
@@ -98,6 +116,7 @@ namespace AnnotateDataUpdate
             Console.WriteLine("6. Remove textfiles with no images");
             Console.WriteLine("7. Automatically extract a random validation set (25%)");
             Console.WriteLine("8. Convert all images to png");
+            Console.WriteLine("9. Convert images to invalid data");
             Console.WriteLine("0. Exit");
             input = Console.ReadKey().Key;
             return path;
